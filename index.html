@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mass Shootings in 2024</title>
+        <style>
+        * {
+            font-family: "Times New Roman", Times, serif;
+        }
+        p {
+            font-size: 0.85em;
+        }
+        .state {
+            stroke: #333;
+            stroke-width: 1.5;
+            
+        }
+        .county {
+            fill: #e3e3e3;
+            stroke: #333;
+            stroke-width: 0.5;
+        }
+        .state-label {
+            stroke: #333;
+            stroke-width: 0.5;
+            fill: #333;
+        }
+
+        .tooltip {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: linear-gradient(145deg, #ffffff, #f3f3f3);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Arial';
+            font-size: 0.95em;
+            color: #333;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 10000;
+            pointer-events: none;
+            max-width: 350;
+        }
+        .tooltip h3 {
+            font-size: 1.2em;
+            color: #007bFF;
+            margin-bottom: 10px;
+        }
+
+        .tooltip strong {
+            color: #555;
+        }
+
+        .tooltip button {
+            display: block;
+            margin-top: 15px;
+            padding: 8px 12px;
+            font-size: 0.9em;
+            color: white;
+            background-color: #007BFF; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            flex-direction: column; 
+        }
+
+        #map {
+            width: 90vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        </style>
+    </head>
+    <body>
+        <h1>Mass Shootings in the United States 2024</h1>
+        <div>
+            <input type="text" id="stateSearch" placeholder="Enter a state (e.g., TX)">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="map"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+        <script src="http://d3js.org/topojson.v3.min.js"></script>
+        <script src="visData.js"></script>
+    </body>
+</html>
