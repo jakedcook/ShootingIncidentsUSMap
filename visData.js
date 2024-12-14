@@ -169,16 +169,16 @@
 
         // process shooting data with meaningful names
         var massShootings = massShootings.map(row => ({
-            IncidentID: row["Incident ID"],
-            IncidentDate: row["Incident Date"],
+            IncidentID: row["IncidentID"],
+            IncidentDate: row["IncidentDate"],
             State: row["State"],
-            CityCounty: row["City Or County"],
+            CityCounty: row["CityCounty"],
             Address: row["Address"],
-            VictimsKilled: +row["Victims Killed"],
-            VictimsInjured: +row["Victims Injured"],
-            SuspectsKilled: +row["Suspects Killed"],
-            SuspectsInjured: +row["Suspects Injured"],
-            SuspectsArrested: +row["Suspects Arrested"],
+            VictimsKilled: +row["VictimsKilled"],
+            VictimsInjured: +row["VictimsInjured"],
+            SuspectsKilled: +row["SuspectsKilled"],
+            SuspectsInjured: +row["SuspectsInjured"],
+            SuspectsArrested: +row["SuspectsArrested"],
             Latitude: +row["Latitude"],
             Longitude: +row["Longitude"],
             CoordinatesFound: row["Coordinates_Found"]
