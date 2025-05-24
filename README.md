@@ -61,7 +61,7 @@ The map was designed through iterative prototyping:
 
 ## 🚀 Live Demo
 
-👉 [Live Map Visualization (GitHub Pages or local demo video)](https://jakedcook.github.io/ShootingIncidentsUSMap/)
+👉 [Live Map Visualization](https://jakedcook.github.io/ShootingIncidentsUSMap/)
 
 ---
 
